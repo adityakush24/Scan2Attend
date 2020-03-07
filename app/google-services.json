@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "337253384173",
+    "firebase_url": "https://scan2attend-b5684.firebaseio.com",
+    "project_id": "scan2attend-b5684",
+    "storage_bucket": "scan2attend-b5684.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337253384173:android:e63bbb12f8593c2673b1e4",
+        "android_client_info": {
+          "package_name": "com.example.scan2attend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337253384173-m0bk2c8gmehb76pl5vi8rc9udglov8lb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scan2attend",
+            "certificate_hash": "90448444bba8e51e7c691ac5c1d01af5dc54508c"
+          }
+        },
+        {
+          "client_id": "337253384173-22rb6glmobtofjq27d4s2jl6aq0mptfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAegWBMthZ7-hBj3pMnuOikjv5DLXL67WE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337253384173-22rb6glmobtofjq27d4s2jl6aq0mptfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

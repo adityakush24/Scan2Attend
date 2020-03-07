@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_grad1"
+    >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/roboto_light"
+        android:hint="Name"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F2F2F2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <EditText
+        android:id="@+id/rollNo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/roboto_light"
+        android:hint="Roll Number"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F2F2F2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Sign Up As"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/studentBtn"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/stroked_transparent_white_bg"
+        android:fontFamily="@font/roboto_light"
+        android:text="Student"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/teacherBtn"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/roboto_light"
+        android:text="Teacher"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:id="@+id/yearLL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_light"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            android:text="Year"
+            android:background="@drawable/left_stroked_transparent_bg"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginStart="2dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="#00ffffff"
+                    android:onClick="setYear"
+                    android:text="1" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="#00ffffff"
+                    android:onClick="setYear"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:onClick="setYear"
+                    android:background="#00ffffff"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="#00ffffff"
+                    android:onClick="setYear"
+                    android:text="4" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:onClick="setSem"
+                    android:background="#00ffffff"
+                    android:textAllCaps="false"
+                    android:text="Sem 1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="#00ffffff"
+                    android:onClick="setSem"
+                    android:textAllCaps="false"
+                    android:text="Sem 2" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/groupLL"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_stroked_transparent_bg"
+            android:fontFamily="@font/roboto_light"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            android:text="Group"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:padding="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="51"
+                    android:onClick="setGroup"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="52"
+                    android:onClick="setGroup"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:onClick="setGroup"
+                    android:text="53"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="54"
+                    android:onClick="setGroup"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="55"
+                    android:onClick="setGroup"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="56"
+                    android:onClick="setGroup"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/courseLL"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_stroked_transparent_bg"
+            android:fontFamily="@font/roboto_light"
+            android:paddingBottom="20dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:paddingTop="20dp"
+            android:text="Course"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:padding="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="CSE"
+                    android:onClick="setBranch"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="EE"
+                    android:onClick="setBranch"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_marginLeft="5dp"
+                    android:text="EC"
+                    android:onClick="setBranch"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_marginLeft="5dp"
+                    android:text="ME"
+                    android:onClick="setBranch"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:background="@drawable/sign_up_btn"
+        android:onClick="registerUser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
